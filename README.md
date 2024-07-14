@@ -1,1 +1,1 @@
-# PlayerRegistrationEventPublisher
+# Player Event Publisher
