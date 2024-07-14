@@ -1,0 +1,210 @@
+<players>
+    <player_registration>
+        <id>1</id>
+        <name>John Doe</name>
+        <age>25</age>
+        <country>USA</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2022">League Winner</achievement>
+            <achievement year="2023">Top Scorer</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <age>22</age>
+        <country>Canada</country>
+        <position>Midfielder</position>
+        <achievements>
+            <achievement year="2021">Best Midfielder</achievement>
+            <achievement year="2022">Assist Leader</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>3</id>
+        <name>Mike Brown</name>
+        <age>27</age>
+        <country>England</country>
+        <position>Defender</position>
+        <achievements>
+            <achievement year="2020">Defender of the Year</achievement>
+            <achievement year="2021">Most Tackles</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>4</id>
+        <name>Lisa White</name>
+        <age>23</age>
+        <country>Australia</country>
+        <position>Goalkeeper</position>
+        <achievements>
+            <achievement year="2019">Best Goalkeeper</achievement>
+            <achievement year="2021">Golden Glove</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>5</id>
+        <name>Chris Green</name>
+        <age>30</age>
+        <country>Brazil</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2018">Top Scorer</achievement>
+            <achievement year="2020">Player of the Year</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>6</id>
+        <name>Emily Black</name>
+        <age>21</age>
+        <country>France</country>
+        <position>Midfielder</position>
+        <achievements>
+            <achievement year="2022">Best Young Player</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>7</id>
+        <name>David Blue</name>
+        <age>26</age>
+        <country>Germany</country>
+        <position>Defender</position>
+        <achievements>
+            <achievement year="2021">Champions League Winner</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>8</id>
+        <name>Anna Yellow</name>
+        <age>24</age>
+        <country>Italy</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2019">Serie A Top Scorer</achievement>
+            <achievement year="2020">Best Player</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>9</id>
+        <name>Paul Red</name>
+        <age>28</age>
+        <country>Spain</country>
+        <position>Midfielder</position>
+        <achievements>
+            <achievement year="2020">La Liga Best Midfielder</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>10</id>
+        <name>Rachel Orange</name>
+        <age>29</age>
+        <country>Netherlands</country>
+        <position>Goalkeeper</position>
+        <achievements>
+            <achievement year="2018">Eredivisie Golden Glove</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>11</id>
+        <name>George Purple</name>
+        <age>24</age>
+        <country>Argentina</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2021">Copa Libertadores Top Scorer</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>12</id>
+        <name>Hannah Cyan</name>
+        <age>22</age>
+        <country>Sweden</country>
+        <position>Defender</position>
+        <achievements>
+            <achievement year="2022">Swedish League Best Defender</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>13</id>
+        <name>Nick Pink</name>
+        <age>27</age>
+        <country>Mexico</country>
+        <position>Midfielder</position>
+        <achievements>
+            <achievement year="2019">Best Playmaker</achievement>
+            <achievement year="2020">Top Assists</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>14</id>
+        <name>Laura Magenta</name>
+        <age>23</age>
+        <country>Portugal</country>
+        <position>Goalkeeper</position>
+        <achievements>
+            <achievement year="2021">Portuguese League Golden Glove</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>15</id>
+        <name>Kevin Brown</name>
+        <age>25</age>
+        <country>Belgium</country>
+        <position>Defender</position>
+        <achievements>
+            <achievement year="2020">Best Young Defender</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>16</id>
+        <name>Amy White</name>
+        <age>24</age>
+        <country>Switzerland</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2019">Swiss League Top Scorer</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>17</id>
+        <name>Steve Green</name>
+        <age>26</age>
+        <country>Denmark</country>
+        <position>Midfielder</position>
+        <achievements>
+            <achievement year="2021">Danish League Best Midfielder</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>18</id>
+        <name>Sara Blue</name>
+        <age>28</age>
+        <country>Norway</country>
+        <position>Goalkeeper</position>
+        <achievements>
+            <achievement year="2022">Norwegian League Golden Glove</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>19</id>
+        <name>Mark Black</name>
+        <age>29</age>
+        <country>Russia</country>
+        <position>Defender</position>
+        <achievements>
+            <achievement year="2018">Russian League Best Defender</achievement>
+        </achievements>
+    </player_registration>
+    <player_registration>
+        <id>20</id>
+        <name>Linda Red</name>
+        <age>27</age>
+        <country>Japan</country>
+        <position>Forward</position>
+        <achievements>
+            <achievement year="2020">J-League Top Scorer</achievement>
+            <achievement year="2021">Best Player</achievement>
+        </achievements>
+    </player_registration>
+</players>
