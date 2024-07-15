@@ -16,6 +16,7 @@ namespace PlayerEventPublisher
 
             try
             {
+                // Config vars
                 var xmlFilePath = GetConfigValue(configuration, "XmlFilePath", logger);
                 var rabbitMqHostName = GetConfigValue(configuration, "RabbitMQ:HostName", logger);
                 var rabbitMqExchangeName = GetConfigValue(configuration, "RabbitMQ:ExchangeName", logger);
@@ -30,9 +31,10 @@ namespace PlayerEventPublisher
                 var playerParser = host.Services.GetRequiredService<Parser>();
                 var rabbitMqLogger = host.Services.GetRequiredService<ILogger<EventPublisher>>();
 
+                // When we parse an individual player, we sent it to event publisher right away
                 using (var publisher = new EventPublisher(rabbitMqHostName, rabbitMqExchangeName, encryptionKey, encryptMessages, rabbitMqLogger))
                 {
-                    await foreach (var player in playerParser.ParseAsync(xmlFilePath)) // Asynchronously process each player
+                    await foreach (var player in playerParser.ParseAsync(xmlFilePath))
                     {
                         await publisher.PublishPlayerRegistrationEventAsync(player, xmlFilePath);
                         await publisher.PublishPlayerAchievementsEventAsync(player, xmlFilePath);
@@ -48,7 +50,7 @@ namespace PlayerEventPublisher
         }
 
 
-        // unified method for reading config values
+        // Unified method for reading config values
         private static string GetConfigValue(IConfiguration configuration, string key, ILogger logger)
         {
             var value = configuration[key];
@@ -60,7 +62,7 @@ namespace PlayerEventPublisher
             return value;
         }
 
-        // build host and add services
+        // Build host and add services
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>

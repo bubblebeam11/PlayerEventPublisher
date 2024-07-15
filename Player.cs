@@ -2,7 +2,6 @@
 {
     public class Player
     {
-        // Player properties
         public string Id { get; set; } = string.Empty;
         public string Name { get; set; } = string.Empty;
         public string Age { get; set; } = string.Empty;
@@ -13,7 +12,6 @@
 
     public class Achievement
     {
-        // Achievement properties
         public string Year { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
     }
