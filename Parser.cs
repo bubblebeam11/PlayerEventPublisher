@@ -15,6 +15,7 @@ namespace PlayerEventPublisher
         // Parses the XML file to extract player information
         public async IAsyncEnumerable<Player> ParseAsync(string xmlFilePath)
         {
+            // Validate path
             if (string.IsNullOrEmpty(xmlFilePath))
             {
                 _logger.LogError("XML file path is null or empty");
@@ -25,8 +26,9 @@ namespace PlayerEventPublisher
 
             try
             {
+                // Read xml file
                 _logger.LogInformation("Loading XML file: {XmlFilePath}", xmlFilePath);
-                var xmlContent = await File.ReadAllTextAsync(xmlFilePath); // Asynchronous file read
+                var xmlContent = await File.ReadAllTextAsync(xmlFilePath);
                 doc.LoadXml(xmlContent);
                 _logger.LogInformation("Successfully loaded XML file: {XmlFilePath}", xmlFilePath);
             }
@@ -42,7 +44,7 @@ namespace PlayerEventPublisher
                 _logger.LogWarning("No player registration nodes found in the XML file: {XmlFilePath}", xmlFilePath);
                 yield break;
             }
-
+            // Parse
             foreach (XmlNode playerNode in playerNodes)
             {
                 var player = new Player

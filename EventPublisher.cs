@@ -39,6 +39,7 @@ namespace PlayerEventPublisher
 
         public async Task PublishPlayerRegistrationEventAsync(Player player, string xmlFilePath)
         {
+            // Prepare registration event
             var registrationEvent = new
             {
                 event_type = "player_registration",
@@ -56,6 +57,7 @@ namespace PlayerEventPublisher
             await PublishEventAsync(registrationEvent, player.Id, registrationEvent.event_type, xmlFilePath);
         }
 
+        // Achievements event
         public async Task PublishPlayerAchievementsEventAsync(Player player, string xmlFilePath)
         {
             var achievementsEvent = new
@@ -69,17 +71,20 @@ namespace PlayerEventPublisher
             await PublishEventAsync(achievementsEvent, player.Id, achievementsEvent.event_type, xmlFilePath);
         }
 
+        // Unified for both event types
         private async Task PublishEventAsync(object eventMessage, string playerId, string eventType, string xmlFilePath)
         {
             var eventId = Guid.NewGuid().ToString();
             _logger.LogInformation("Generated new event ID: {EventId} for event type: {EventType}", eventId, eventType);
 
+            // Add unique id for each event regardless of type
             var eventWithId = new
             {
                 event_id = eventId,
                 eventMessage
             };
 
+            // Serialize and encrypt if needed
             var plainText = JsonConvert.SerializeObject(eventWithId);
             _logger.LogInformation("Serialized event to JSON for event ID: {EventId}", eventId);
 
